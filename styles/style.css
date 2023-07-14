@@ -1,28 +1,40 @@
 body {
   padding: 0;
+  margin: 0;
   text-align: center;
+  background-image: url(../images/carbone-bg.jpg);
+  color : white;
+  font-size: 1.5em;
+}
+
+h2, span {
+color:red;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #game-intro {
-  padding: 20px 0px;
+  padding: 0;
 }
 
 #game-container {
   display: flex;
-  width: 100vw;
-  padding: 20px 0px;
-  justify-content: center;
+  padding: 0 30px;
+  justify-content: center;  
 }
 
 #game-screen {
   display: none;
   align-content: center;
-  padding: 20px 0px;
+  padding: 0;
   overflow: hidden;
   position: relative;
   background-image: url(../images/road.png);
   background-size: cover;
   animation: slide 5s linear infinite;
+  width: 500px;
+  height: 800px;
+  margin: auto;
+  cursor: none; 
 }
 
 @keyframes slide {
@@ -52,15 +64,17 @@ body {
 
 .arrows-img {
   width: 150px;
-}
+  }
 
 body button {
   font-size: 30px;
-  background-color: #870007;
+  background-color: red;
   color: #fff;
   padding: 20px 40px;
   border: 0;
   box-shadow: 0;
   border-radius: 5px;
   margin-bottom: 20px;
+  box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  cursor: pointer;
 }
